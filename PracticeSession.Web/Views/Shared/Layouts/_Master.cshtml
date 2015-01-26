@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Master</title>
+</head>
+    <body>
+        <div>
+            @{ Html.RenderAction("Index", "Menu");}
+        </div>
+        <div>
+            @RenderBody()  
+        </div>
+
+        
+
+        @*<footer>
+            @RenderSection("Footer", false)
+        </footer>*@  
+    </body>
+</html>

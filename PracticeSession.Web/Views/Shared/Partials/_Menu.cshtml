@@ -1,0 +1,11 @@
+﻿@model MenuViewModel
+
+<ul>
+    @foreach (var item in Model.MenuItems)
+    {
+        <li>
+            <a href="@Url.ContentUrl(item.ContentLink)">@item.Name</a>
+            @*@Html.ContentLink(item.Name, item.ContentLink)*@
+        </li>
+    }
+</ul>
